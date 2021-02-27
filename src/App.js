@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { TwitterFollowButton } from 'react-twitter-embed';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/** <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-         litterat.io
-        </p>
+        {<img src="litterat-logo.jpg" className="App-logo" alt="logo" />} 
 	<p>
-	 Litterat and Pep available on
+	 Litterat serialization
 	</p>
         <a
           className="App-link"
           href="https://github.com/litterat"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Github
-        </a>
+        >github.com/litterat</a>
+        <p><TwitterFollowButton
+          screenName={'litterat_io'}
+        /></p>
       </header>
     </div>
   );
